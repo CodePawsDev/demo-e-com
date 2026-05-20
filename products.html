@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>สินค้า</title>
+  <style>
+    body {
+      font-family: 'Noto Sans Thai', Arial, sans-serif;
+      background: #f7f8fa;
+      margin: 0;
+      padding: 0;
+    }
+    .product-container {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px 0 rgba(0,0,0,0.05);
+      padding: 32px;
+    }
+    h2 {
+      color: #2979ff;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .products-grid {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .product-card {
+      border: 1px solid #ececec;
+      border-radius: 10px;
+      padding: 20px 20px 16px 20px;
+      text-align: center;
+      width: 180px;
+      background: #fafcff;
+      transition: box-shadow 0.18s;
+      box-shadow: 0 1px 7px 0 rgba(0,0,0,0.04);
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 18px 0 rgba(41,121,255,0.14);
+    }
+    .product-image {
+      width: 100%;
+      max-width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+    .product-name {
+      font-size: 1.07rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 7px;
+    }
+    .product-price {
+      color: #2979ff;
+      font-size: 1.05rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      padding: 7px 22px;
+      background: #2979ff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.18s;
+    }
+    .buy-btn:hover {
+      background: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <h2>รายการสินค้า</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img class="product-image" src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="สินค้าชิ้นที่ 1">
+        <div class="product-name">เสื้อยืดสีขาว</div>
+        <div class="product-price">199 บาท</div>
+        <button class="buy-btn" onclick="alert('คุณเลือกซื้อ เสื้อยืดสีขาว')">ซื้อเลย</button>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://cdn-icons-png.flaticon.com/512/3081/3081575.png" alt="สินค้าชิ้นที่ 2">
+        <div class="product-name">รองเท้าผ้าใบ</div>
+        <div class="product-price">599 บาท</div>
+        <button class="buy-btn" onclick="alert('คุณเลือกซื้อ รองเท้าผ้าใบ')">ซื้อเลย</button>
+      </div>
+      <div class="product-card">
+        <img class="product-image" src="https://cdn-icons-png.flaticon.com/512/2830/2830139.png" alt="สินค้าชิ้นที่ 3">
+        <div class="product-name">กระเป๋าสะพาย</div>
+        <div class="product-price">349 บาท</div>
+        <button class="buy-btn" onclick="alert('คุณเลือกซื้อ กระเป๋าสะพาย')">ซื้อเลย</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
