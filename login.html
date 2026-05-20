@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เข้าสู่ระบบ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto 0 auto;
+      background: #fff;
+      padding: 36px 28px 28px 28px;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px 0 rgba(0,0,0,.06);
+      text-align: center;
+    }
+    .login-container h2 {
+      color: #2979ff;
+      margin-bottom: 18px;
+      font-size: 1.7rem;
+    }
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .login-form input {
+      padding: 10px 12px;
+      font-size: 1rem;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      outline: none;
+      transition: border 0.16s;
+    }
+    .login-form input:focus {
+      border-color: #2979ff;
+    }
+    .login-button {
+      padding: 12px 0;
+      background: #2979ff;
+      color: #fff;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.18s;
+      margin-top: 8px;
+    }
+    .login-button:hover {
+      background: #1565c0;
+    }
+    .login-footer {
+      margin-top: 18px;
+      color: #aaa;
+      font-size: .96rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>เข้าสู่ระบบ</h2>
+    <form class="login-form" autocomplete="off">
+      <input type="text" name="username" placeholder="ชื่อผู้ใช้" required />
+      <input type="password" name="password" placeholder="รหัสผ่าน" required />
+      <button type="submit" class="login-button">เข้าสู่ระบบ</button>
+    </form>
+    <div class="login-footer">
+      &copy; 2024 เว็บไซต์ของคุณ
+    </div>
+    <footer>
+      &copy; 2024 เว็บไซต์ของคุณ
+    </footer>
+  </div>
+</body>
+</html>
